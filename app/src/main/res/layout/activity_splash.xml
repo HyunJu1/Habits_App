@@ -6,11 +6,43 @@
 
     <ImageView
         android:id="@+id/imageView6"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:contentDescription="ssd"
-        app:srcCompat="@mipmap/main_img" />
+        app:srcCompat="@mipmap/marimo" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/imageView6"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        app:srcCompat="@mipmap/pull_2" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/imageView6"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        app:srcCompat="@mipmap/pull_1" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:text="66 Days"
+        android:textColor="#f48fb1"
+        android:textSize="28sp"
+        android:textStyle="bold" />
 
 </RelativeLayout>
