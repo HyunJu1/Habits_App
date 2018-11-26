@@ -145,32 +145,33 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-<RadioGroup
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
+                    <RadioGroup
+                        android:id="@+id/rgroup1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
 
-    <RadioButton
-        android:id="@+id/rdoButton3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="문제집 풀기" />
+                        <RadioButton
+                            android:id="@+id/rdoButton3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="문제집 풀기" />
 
-    <RadioButton
-        android:id="@+id/rdoButton2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="1일 1커밋하기" />
+                        <RadioButton
+                            android:id="@+id/rdoButton2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="1일 1커밋하기" />
 
-    <RadioButton
-        android:id="@+id/rdoButton1"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="학습지 풀기" />
+                        <RadioButton
+                            android:id="@+id/rdoButton1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="학습지 풀기" />
 
 
-</RadioGroup>D
+                    </RadioGroup>D
                 </LinearLayout>
                 <!-- 세 번째 페이지. content3 -->
                 <LinearLayout
@@ -179,23 +180,34 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                    <CheckBox
-                        android:id="@+id/checkBox1"
+                    <RadioGroup
+                        android:id="@+id/rgroup2"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="아침 10분 일찍 일어나기" />
+                        android:layout_height="match_parent">
 
-                    <CheckBox
-                        android:id="@+id/checkBox2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="야식 시켜먹지 않기" />
+                        <RadioButton
+                            android:id="@+id/rdoButton4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="아침 10분 일찍 일어나기" />
 
-                    <CheckBox
-                        android:id="@+id/checkBox3"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="밤에 스마트폰 안보기" />
+                        <RadioButton
+                            android:id="@+id/rdoButton5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="야식 시켜먹지 않기" />
+
+                        <RadioButton
+                            android:id="@+id/rdoButton6"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="밤에 스마트폰 안보기" />
+
+
+                    </RadioGroup>
+
                 </LinearLayout>
 
             </FrameLayout>

@@ -51,6 +51,29 @@ public class DataManager {
         marimoDB.insert("marimo",null,cv);
 
     }
+    public void enrollHabit( int x, String strDate, String endDate){
+        SQLiteDatabase habitDB = habitDBHelper.getWritableDatabase();
+
+        ContentValues cv = new ContentValues();
+        cv.put("habit_no",x);
+        cv.put("start_date",strDate);
+        cv.put("end_date",endDate);
+        cv.put("push","더 똑똑해지는 중!");
+        cv.put("category","공부");
+        habitDB.insert("habit",null,cv);
+
+    }
+    public void enrollAllHabit( int x, String name){
+        SQLiteDatabase all_habitDB = allHabitDBHelper.getWritableDatabase();
+
+        ContentValues cv = new ContentValues();
+        cv.put("all_no",x);
+        cv.put("title",name);
+        cv.put("content",name);
+        cv.put("category","공부");
+        all_habitDB.insert("all_habit",null,cv);
+
+    }
 
 
 

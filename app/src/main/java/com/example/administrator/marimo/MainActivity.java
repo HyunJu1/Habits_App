@@ -285,6 +285,7 @@ public class MainActivity extends AppCompatActivity {
             ImageView img = (ImageView) retval.findViewById(R.id.image);
             if (position == 1) {
                 img.setImageResource(R.mipmap.vitamin_icon);
+
             }
 
 
@@ -297,7 +298,7 @@ public class MainActivity extends AppCompatActivity {
                     int a = habit_no.get(position);
                     Log.i("c", String.valueOf(a));
 
-                //    Toast.makeText(getApplicationContext(),"날짜차이:"+doing_date, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(),doing_date+"일째 습관개선 도전중!", Toast.LENGTH_SHORT).show();
 
                     finding(a, doing_date);
 
@@ -309,7 +310,7 @@ public class MainActivity extends AppCompatActivity {
                 public void onClick(View v) {
                     int a = habit_no.get(position);
                     // doing_date=doDiffOfDate(habit_startDate.get(position),str_date);
-                  //  Toast.makeText(getApplicationContext(),"날짜차이:"+doing_date, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(),doing_date+"일째 습관개선 도전중!", Toast.LENGTH_SHORT).show();
 
                     finding2(a, doing_date);
                 }

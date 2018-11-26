@@ -20,8 +20,6 @@ public class MarimoDBHelper extends SQLiteOpenHelper {
                 " status Integer not null" +
                 ");");
 
-        // sample data
-//        db.execSQL("insert into marimo values (null, 'babyMarimo', '1', '1');");
 
     }
 

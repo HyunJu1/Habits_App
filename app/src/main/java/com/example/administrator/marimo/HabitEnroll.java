@@ -9,22 +9,35 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TabHost;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.administrator.marimo.database.DataManager;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
+
 public class HabitEnroll extends AppCompatActivity {
     TextView bt;
     Button newBtn1;
+    RadioGroup rgroup;
+    RadioGroup rgroup2;
+    DataManager dm = new DataManager(HabitEnroll.this);
+    SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd", Locale.KOREA);
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.habitenroll);
-
+        rgroup=(RadioGroup)findViewById(R.id.rgroup1);
+        rgroup2=(RadioGroup)findViewById(R.id.rgroup2);
         newBtn1= (Button)findViewById(R.id.newBtn);
         showMarimoName();
+
 
         TabHost tabHost1 = (TabHost) findViewById(R.id.tabHost1);
         tabHost1.setup();
@@ -56,7 +69,20 @@ public class HabitEnroll extends AppCompatActivity {
         bt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                RadioButton selectedRdo = (RadioButton)findViewById(rgroup.getCheckedRadioButtonId());
+                String selectedValue = selectedRdo.getText().toString();
+                Toast.makeText(getApplicationContext(),selectedValue+"가 선택되었습니다", Toast.LENGTH_SHORT).show();
 
+                RadioButton selectedRdo2 = (RadioButton)findViewById(rgroup2.getCheckedRadioButtonId());
+                String selectedValue2 = selectedRdo2.getText().toString();
+                Toast.makeText(getApplicationContext(),selectedValue2+"가 선택되었습니다", Toast.LENGTH_SHORT).show();
+
+                //디비에 저장하려다 에러 나서 안함
+//                int x = (int)(Math.random())+100;
+//
+//                String str_date = df.format(new Date());
+//                dm.enrollAllHabit(x,selectedValue);
+//                dm.enrollHabit(x,str_date,str_date+66);
                     Intent intent = new Intent(HabitEnroll.this, MainActivity.class);
                     startActivity(intent);
 
