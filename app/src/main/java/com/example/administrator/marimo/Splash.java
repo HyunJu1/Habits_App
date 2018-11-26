@@ -1,6 +1,5 @@
 package com.example.administrator.marimo;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Handler;
 import android.os.Bundle;

@@ -131,7 +131,7 @@ public class MainActivity extends AppCompatActivity {
         listview.setOnItemClickListener(mItemClickListener);
         text.setText(String.valueOf(doing_date));
 // 두날짜의 차이 구하기
-        text1.setText(String.valueOf(66-doing_date)+"일만 지나면 마리모가 성장해요!");
+        text1.setText(String.valueOf(66-doing_date)+"일이 지나면 마리모가 성장하면서 \n 습관 개선 성공이예요!");
 
         //   Toast.makeText(getApplicationContext(), getTest(), Toast.LENGTH_SHORT).show();
     }
@@ -289,7 +289,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-            doing_date=doDiffOfDate(habit_startDate.get(position),str_date);
+            doing_date=doDiffOfDate(str_date,habit_startDate.get(position));
 
             button1.setOnClickListener(new View.OnClickListener() {
                 @Override

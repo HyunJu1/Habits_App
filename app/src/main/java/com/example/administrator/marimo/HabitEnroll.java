@@ -17,12 +17,13 @@ import com.example.administrator.marimo.database.DataManager;
 
 public class HabitEnroll extends AppCompatActivity {
     TextView bt;
+    Button newBtn1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.habitenroll);
 
-        //
+        newBtn1= (Button)findViewById(R.id.newBtn);
         showMarimoName();
 
         TabHost tabHost1 = (TabHost) findViewById(R.id.tabHost1);
@@ -43,20 +44,6 @@ public class HabitEnroll extends AppCompatActivity {
         ts3.setIndicator("생활패턴");
         tabHost1.addTab(ts3);
 
-//        TabHost.TabSpec ts4 = tabHost1.newTabSpec("Tab Spec 4");
-//        ts4.setContent(R.id.content4);
-//        ts4.setIndicator("정신건강");
-//        tabHost1.addTab(ts4);
-//
-//        TabHost.TabSpec ts5 = tabHost1.newTabSpec("Tab Spec 5");
-//        ts5.setContent(R.id.content5);
-//        ts5.setIndicator("건강");
-//        tabHost1.addTab(ts5);
-//
-//        TabHost.TabSpec ts6 = tabHost1.newTabSpec("Tab Spec 6");
-//        ts6.setContent(R.id.content6);
-//        ts6.setIndicator("사회관계");
-//        tabHost1.addTab(ts6);
 
         Button btn = (Button) findViewById(R.id.plus);
         btn.setOnClickListener(new View.OnClickListener() {
@@ -89,6 +76,9 @@ public class HabitEnroll extends AppCompatActivity {
                 new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
                         Toast.makeText(getApplicationContext(), edittext.getText().toString(), Toast.LENGTH_LONG).show();
+                        newBtn1.setText(edittext.getText().toString());
+                        newBtn1.setVisibility(View.VISIBLE);
+
                     }
                 });
         builder.setNegativeButton("CANCEL",

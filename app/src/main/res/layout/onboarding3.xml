@@ -22,9 +22,9 @@
 
         <Button
             android:id="@+id/start2"
-            android:layout_width="wrap_content"
+            android:layout_width="50dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
+            android:layout_margin="10dp"
             android:layout_weight="1"
             android:background="@drawable/corner"
             android:text="내 습관 보기"
@@ -32,12 +32,12 @@
 
         <Button
             android:id="@+id/start"
-            android:layout_width="wrap_content"
+            android:layout_width="50dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
+            android:layout_margin="10dp"
             android:layout_weight="1"
             android:background="@drawable/corner"
-            android:text="새로 시작하기"
+            android:text="새로 시작"
             android:textSize="20sp" />
     </LinearLayout>
 
