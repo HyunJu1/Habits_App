@@ -69,6 +69,7 @@ public class HabitEnroll extends AppCompatActivity {
         bt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                
                 RadioButton selectedRdo = (RadioButton)findViewById(rgroup.getCheckedRadioButtonId());
                 String selectedValue = selectedRdo.getText().toString();
                 Toast.makeText(getApplicationContext(),selectedValue+"가 선택되었습니다", Toast.LENGTH_SHORT).show();

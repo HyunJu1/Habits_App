@@ -34,15 +34,15 @@
             app:srcCompat="@mipmap/rock" />
 
         <!--<ImageView-->
-            <!--android:id="@+id/imageView"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_above="@+id/imageView2"-->
-            <!--android:layout_marginEnd="20dp"-->
-            <!--android:layout_marginRight="20dp"-->
-            <!--android:layout_toLeftOf="@+id/imageView4"-->
-            <!--android:layout_toStartOf="@+id/imageView4"-->
-            <!--app:srcCompat="@mipmap/marimo" />-->
+        <!--android:id="@+id/imageView"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_above="@+id/imageView2"-->
+        <!--android:layout_marginEnd="20dp"-->
+        <!--android:layout_marginRight="20dp"-->
+        <!--android:layout_toLeftOf="@+id/imageView4"-->
+        <!--android:layout_toStartOf="@+id/imageView4"-->
+        <!--app:srcCompat="@mipmap/marimo" />-->
 
         <ImageView
             android:id="@+id/imageView4"
