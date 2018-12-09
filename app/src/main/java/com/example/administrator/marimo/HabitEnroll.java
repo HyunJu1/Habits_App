@@ -33,9 +33,9 @@ public class HabitEnroll extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.habitenroll);
-        rgroup=(RadioGroup)findViewById(R.id.rgroup1);
-        rgroup2=(RadioGroup)findViewById(R.id.rgroup2);
-        newBtn1= (Button)findViewById(R.id.newBtn);
+        rgroup = (RadioGroup) findViewById(R.id.rgroup1);
+        rgroup2 = (RadioGroup) findViewById(R.id.rgroup2);
+        newBtn1 = (Button) findViewById(R.id.newBtn);
         showMarimoName();
 
 
@@ -65,27 +65,30 @@ public class HabitEnroll extends AppCompatActivity {
                 show();
             }
         });
-        bt=(TextView)findViewById(R.id.next2);
+        bt = (TextView) findViewById(R.id.next2);
         bt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                
-                RadioButton selectedRdo = (RadioButton)findViewById(rgroup.getCheckedRadioButtonId());
-                String selectedValue = selectedRdo.getText().toString();
-                Toast.makeText(getApplicationContext(),selectedValue+"가 선택되었습니다", Toast.LENGTH_SHORT).show();
+                int radioButtonID = rgroup.getCheckedRadioButtonId();
+                if (radioButtonID != -1) {
+                    RadioButton selectedRdo = (RadioButton) findViewById(rgroup.getCheckedRadioButtonId());
+                    String selectedValue = selectedRdo.getText().toString();
+                    Toast.makeText(getApplicationContext(), selectedValue + "가 선택되었습니다", Toast.LENGTH_SHORT).show();
+                }
+                int radioButtonID2 = rgroup2.getCheckedRadioButtonId();
+                if (radioButtonID2 != -1) {
+                    RadioButton selectedRdo2 = (RadioButton) findViewById(rgroup2.getCheckedRadioButtonId());
+                    String selectedValue2 = selectedRdo2.getText().toString();
+                    Toast.makeText(getApplicationContext(), selectedValue2 + "가 선택되었습니다", Toast.LENGTH_SHORT).show();
+                }
 
-                RadioButton selectedRdo2 = (RadioButton)findViewById(rgroup2.getCheckedRadioButtonId());
-                String selectedValue2 = selectedRdo2.getText().toString();
-                Toast.makeText(getApplicationContext(),selectedValue2+"가 선택되었습니다", Toast.LENGTH_SHORT).show();
-
-                //디비에 저장하려다 에러 나서 안함
 //                int x = (int)(Math.random())+100;
 //
 //                String str_date = df.format(new Date());
 //                dm.enrollAllHabit(x,selectedValue);
 //                dm.enrollHabit(x,str_date,str_date+66);
-                    Intent intent = new Intent(HabitEnroll.this, MainActivity.class);
-                    startActivity(intent);
+                Intent intent = new Intent(HabitEnroll.this, MainActivity.class);
+                startActivity(intent);
 
             }
         });

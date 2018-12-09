@@ -151,11 +151,39 @@
                         android:layout_height="wrap_content">
 
                         <RadioButton
-                            android:id="@+id/rdoButton3"
+                            android:id="@+id/rdoButton9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="과제 30분 이상 하기" />
+
+                        <RadioButton
+                            android:id="@+id/rdoButton"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:text="문제집 풀기" />
+
+                        <RadioButton
+                            android:id="@+id/rdoButton7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="1일 1커밋하기" />
+
+                        <RadioButton
+                            android:id="@+id/rdoButton8"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="학습지 풀기" />
+
+                        <RadioButton
+                            android:id="@+id/rdoButton3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="공부 30분 이상 하기" />
 
                         <RadioButton
                             android:id="@+id/rdoButton2"
@@ -168,7 +196,7 @@
                             android:id="@+id/rdoButton1"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:text="학습지 풀기" />
+                            android:text="토익 리스닝 듣기" />
 
 
                     </RadioGroup>D
@@ -184,6 +212,27 @@
                         android:id="@+id/rgroup2"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
+
+                        <RadioButton
+                            android:id="@+id/rdoButton10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="학교 지각하지 않기" />
+
+                        <RadioButton
+                            android:id="@+id/rdoButton12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="비타민 챙겨먹기" />
+
+                        <RadioButton
+                            android:id="@+id/rdoButton11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="밥 천천히 먹기" />
 
                         <RadioButton
                             android:id="@+id/rdoButton4"
